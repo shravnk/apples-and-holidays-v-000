@@ -78,8 +78,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each do |season, season_hash|
     puts season.to_s.capitalize! + ":"
-    season_hash.each do |holiday, supplies; line|
-      line = "   "
+    season_hash.each do |holiday, supplies; line_of_text|
+      line_of_text = "   "
       if holiday.to_s.include? "_"
         line << holiday.to_s.split("_").map(&:capitalize).join(" ")
       else
