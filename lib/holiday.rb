@@ -101,5 +101,6 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.any?("BBQ")
     end
   end
-
 end
+
+all_holidays_with_bbq(holiday_supplies)
