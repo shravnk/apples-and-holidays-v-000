@@ -80,7 +80,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts season.to_s.capitalize!
     season_hash.each do |holiday, supplies|
       if holiday.to_s.include? "_"
-        print holiday.to_s.split("_")[0].capitalize + " " + holiday.to_s.split("_")[1].capitalize
+        print holiday.to_s.split("_").join(" ").capitalize
       else
         print holiday.to_s.capitalize!
       end
