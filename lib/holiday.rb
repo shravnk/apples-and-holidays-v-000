@@ -101,7 +101,8 @@ def all_holidays_with_bbq(holiday_hash)
       supplies.any?("BBQ")
     end
   end
-  
+
 end
 
 test = all_holidays_with_bbq(holiday_supplies)
+binding.pry
