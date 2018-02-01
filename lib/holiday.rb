@@ -79,9 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
   line_of_text = "  "
   holiday_hash.each do |season, season_hash|
     puts season.to_s.capitalize! + ":"
-
     season_hash.each do |holiday, supplies|
-
       if holiday.to_s.include? "_"
         line_of_text << holiday.to_s.split("_").map(&:capitalize).join(" ")
       else
@@ -91,7 +89,6 @@ def all_supplies_in_holidays(holiday_hash)
       puts line_of_text
       line_of_text = "  "
     end
-
   end
 end
 all_supplies_in_holidays(holiday_supplies)
