@@ -99,10 +99,11 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each do |season, season_hash|
     season_hash.select.to_s do |holiday, supplies|
       supplies.any?("BBQ")
+      binding.pry
     end
   end
 
 end
 
-test = all_holidays_with_bbq(holiday_supplies)
-binding.pry
+all_holidays_with_bbq(holiday_supplies)
+
