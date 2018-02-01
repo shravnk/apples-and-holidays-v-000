@@ -79,7 +79,7 @@ def all_supplies_in_holidays(holiday_hash)
   line_of_text = ""
   holiday_hash.each do |season, season_hash|
     puts season.to_s.capitalize! + ":"
-    binding.pry
+    
     season_hash.each do |holiday, supplies|
       line_of_text = "  "
       if holiday.to_s.include? "_"
