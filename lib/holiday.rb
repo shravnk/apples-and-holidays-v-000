@@ -97,10 +97,9 @@ def all_holidays_with_bbq(holiday_hash)
   # return an array of holiday names (as symbols) where supply lists
   # include the string "BBQ"
   holiday_hash.each do |season, season_hash|
-    season_hash.select.to_s do |holiday, supplies|
+    season_hash.select do |holiday, supplies|
       binding.pry
       supplies.any{|supply| supply == "BBQ"}
-      
     end
   end
 
