@@ -84,6 +84,6 @@ holiday_supplies = {
     },
     :spring => {
       :memorial_day => ["BBQ"]
-    }
-  }
-}
+  
+  }}}
+
